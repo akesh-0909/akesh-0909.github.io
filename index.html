@@ -275,7 +275,7 @@
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
 
-    <form action="#">
+    <!-- <form action="#">
         <div class="input-box">
             <input type="text" placeholder="Full Name">
             <input type="email" placeholder="Email Address">
@@ -286,7 +286,49 @@
         </div>
         <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
         <input type="submit" value="Send Message" class="btn">
+    </form> -->
+
+    <form id="contactForm" action="#">
+        <div class="input-box">
+            <input type="text" id="fullName" placeholder="Full Name">
+            <input type="email" id="emailAddress" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+            <input type="tel" id="mobileNumber" placeholder="Mobile Number">
+            <input type="text" id="emailSubject" placeholder="Email Subject">
+        </div>
+        <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
     </form>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents the default form submission
+
+            // Get form data
+            var fullName = document.getElementById("fullName").value;
+            var emailAddress = document.getElementById("emailAddress").value;
+            var mobileNumber = document.getElementById("mobileNumber").value;
+            var emailSubject = document.getElementById("emailSubject").value;
+            var message = document.getElementById("message").value;
+
+            // Compose email body
+            var emailBody = "Full Name: " + fullName + "\n";
+            emailBody += "Email Address: " + emailAddress + "\n";
+            emailBody += "Mobile Number: " + mobileNumber + "\n";
+            emailBody += "Email Subject: " + emailSubject + "\n\n";
+            emailBody += "Message:\n" + message;
+
+            // Create mailto link
+            var mailtoLink = "mailto:akeshkumar65885@gmail.com?subject=" + encodeURIComponent(emailSubject) + "&body=" + encodeURIComponent(emailBody);
+
+            // Open default email client
+            window.location.href = mailtoLink;
+        });
+    </script>
+
+
+
 </section>
 
 <!-- footer design -->
