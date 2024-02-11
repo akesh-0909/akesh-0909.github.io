@@ -88,9 +88,9 @@
         <div class="overlay"></div>
     </div>
 
-    <div class="home-img">
+    <!-- <div class="home-img">
         <img src="/Images/profile.png" alt="home-img">
-    </div>
+    </div> -->
 </section>
 
 
@@ -150,7 +150,20 @@
         </p> -->
 
 
-
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              // Shuffle the letters within each word
+              document.querySelectorAll('.shuffle').forEach(function(word) {
+                let letters = word.textContent.split('');
+                word.innerHTML = '';
+                letters.forEach(function(letter) {
+                  let span = document.createElement('span');
+                  span.textContent = letter;
+                  word.appendChild(span);
+                });
+              });
+            });
+          </script>
         <p>Hey there, wonderful soul! 🌟 Welcome to my little corner of the internet. I'm Akesh Kumar, a curious explorer navigating the realms of Data Science, AI, and ML.<br>
 
             This space isn't just a website; it's my digital sanctuary and a canvas where I paint my passion for data. Imagine a fusion of art, mathematics, and algorithms – that's what I bring to life here.<br></p>
@@ -162,10 +175,8 @@
             Your thoughts are gems, so please, share them with me. Let's turn this digital interaction into a vibrant conversation. </p>
             <h2>Thrilled to connect with you! 🚀✨</h2>
             <br>
-        <a href="#" class="btn">Explore Projects</a>
-    </div>
-    
-</section>
+         
+            
 
 <!-- services section design -->
 <!-- <section class="services" id="services">
@@ -193,8 +204,8 @@
                 eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.</p>
             <a href="#" class="btn">Read More</a>
         </div>
-    </div>
-</section> -->
+    </div>-->
+</section>
 
 <section class="services" id="services">
     <h2 class="heading">My <span>Services</span></h2>
@@ -233,19 +244,19 @@
 
             <div class="portfolio-layer">
                 <h4>Thyroid Cancer Recurrence Prediction</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+<p>Identified key factors causing Recurrence, it aids in personalized treatment planning for improved patient outcomes.</p>
                 <a href="https://www.kaggle.com/code/akeshkumarhp/thyroid-cancer-eda-knn-other-algo-s?kernelSessionId=160119701"><i class='bx bx-link-external'></i></a>
 
 
             </div>
         </div>
         <div class="portfolio-box">
-            <img src="../Images/portfolio2.jpg" alt="">
+            <img src="https://www.kaggleusercontent.com/kf/159065742/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..MpoazE4ITJ1cxVnW3l3c7w.5ohRn4Cq6m5JoPS-QIJSJsKg3KhM0hjbAciyu1ckddFmcqJDDWX6kStkeVXRVCGzba4U0XHyIGdhzfuQfJ1JcP2gZtr9gzckL_Dh27TL4fXyeCnFlGScgkw3VThGk2D5PZ9FOtkvLUMf3Fr2cORPwNmvMpzuiK4QRIqbOj3p0456XXpfpFFl01HU9_2Ww4120meDkjc0SI_a6SL5gJBGItnKR3ynnez2iWDdcKK_YUaqYyybbo21KNo-al-At6d1gyINdXqTNuEs2sESyxY7tNfxJnyCgqga48q0H-ivdVVPivBEBXWUdUpbKF1aWKaIj_bBJ4Nh438Empn6Bfe3K9vhrJjTpFM23JmJNPvsvBWCGHg3KXtn4wmjgx_LgXZr149FDG2WRjWiF1OxvWfwzPohScPkgM5d94iHkB-exPAxvdWFlMWBa05LIN_9RcAoceTijhar2GDMz_B15r8V2lUHcWZ_QAb6k8yNEo6MPvFpuB4hkt5Oh7rT0ZuMjrkLSy4XOkt2OkFInCAWapcGCJjGGcBhtrJ6sxVD2Rhjtqx74SLJDllXGT9wltLuhP0L_qZuMNwU1-LPijjt9fVkb2aQxdmbogKDyPEHZqqDt02tsEN2ebIsdQEKibe1Anf6dhpg3uzscWHlR0Poa2BVZYhqTdW_71OhkttLaJY_rQAUdWdzap7o3uzMAN6b0sB6.GEyloWuaDjcB6AbJWTvlsg/__results___files/__results___41_1.png" alt="">
 
             <div class="portfolio-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
+                <h4>Medical Charges Estimation</h4>
+                <p>Through advanced data analysis, we explored various factors that influenced charges and developed predictive models based on our findings.</p>
+                <a href="https://www.kaggle.com/code/akeshkumarhp/medical-charges-estimation-initial-version?kernelSessionId=159065742"><i class='bx bx-link-external'></i></a>
             </div>
         </div>
         <div class="portfolio-box">
