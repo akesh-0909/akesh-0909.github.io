@@ -234,6 +234,10 @@ section {
     }
 }
 
+
+
+    
+
 .home .profession-box .profession {
     position: absolute;
     left: 0;
@@ -940,3 +944,70 @@ span {
 img {
     border-radius: 20px;
 }
+
+
+
+
+
+
+    .social-media a {
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+        font-size: 30px; /* Set the desired size for icons */
+        /* color: #333; */
+        text-decoration: none;
+    }
+
+    .social-media a span {
+        display: none;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color:transparent;
+        color: #000000;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .social-media a:hover span {
+        display: block;
+    }
+
+
+
+    .about-page,
+.about-content {
+    align-items: center;
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto; /* Sets horizontal margins to "auto" for centering */
+}
+
+@media (max-width: 768px) {
+    .about-page,
+    .about-content {
+        width: 100%;
+    }
+}
+
+.about-content {
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .about-page,
+    .about-content {
+        width: 300mm;
+    }
+}
+
+.about-page {
+    display: flex;
+    justify-content: center;
+    /* Optionally center vertically too by adding align-items: center; */
+}
+
