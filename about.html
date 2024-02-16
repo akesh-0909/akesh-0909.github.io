@@ -13,6 +13,40 @@
  
      <!-- custom css -->
     <link rel="stylesheet" href="css/style1.css">
+
+    <style>
+        .about-page,
+        .about-content {
+            align-items: center;
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto; /* Sets horizontal margins to "auto" for centering */
+        }
+        
+        @media (max-width: 768px) {
+            .about-page,
+            .about-content {
+                width: 100%;
+            }
+        }
+        
+        .about-content {
+            text-align: left;
+        }
+        
+        @media (min-width: 768px) {
+            .about-page,
+            .about-content {
+                width: 300mm;
+            }
+        }
+        
+        .about-page {
+            display: flex;
+            justify-content: center;
+            /* Optionally center vertically too by adding align-items: center; */
+        }
+    </style>
  </head>
  <body>
 
