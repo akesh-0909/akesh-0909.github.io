@@ -1021,3 +1021,34 @@ img {
 }
 
 /* Add more styles based on your preferences */
+.skills-container {
+    background-color: #f2f2f2;  /* Light gray background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
+  }
+  
+  .skills-container h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th.skill, td.skill {
+    padding: 10px;
+    text-align: center;
+    border: none;  /* Remove table borders */
+  }
+  
+  th.skill {
+    background-color: #e0e0e0;  /* Light gray for headers */
+  }
+  
+  td.skill {
+    background-color: #fafafa;  /* Very light gray for cells */
+  }
+  
