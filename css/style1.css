@@ -65,11 +65,18 @@ body {
     font-weight: 600;
     margin-right: auto;
 }
+.navbar{
+    margin:auto;
+    padding: 8px;
+    background-color: var(--bg-color);
+    border-radius: 9px;
+    
+}
 
 .navbar a {
     position: relative;
     font-size: 1.7rem;
-    color: var(--white-color);
+    color: var(--main2-color);
     font-weight: 500;
     margin-right: 3.5rem;
 }
@@ -89,7 +96,9 @@ body {
     bottom: -6px;
     width: 100%;
     height: .2rem;
-    background: var(--white-color);
+    /* color:red; */
+    /* background: var(--white-color); */
+    /* background:var(--white-color); #underline */
 }
 
 .header.sticky .navbar a::before {
@@ -1043,3 +1052,12 @@ img {
       .skill-item:hover .progress-bar {
         width: 100%;
       }
+
+      
+      .sacramento-regular {
+        font-family: "Sacramento", cursive;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 10%;
+       
+    }
