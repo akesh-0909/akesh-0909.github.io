@@ -1054,10 +1054,9 @@ img {
       }
 
       
-      .sacramento-regular {
+      #sacramento-regular {
         font-family: "Sacramento", cursive;
         font-weight: 400;
         font-style: italic;
         margin-bottom: 10%;
-       
     }
